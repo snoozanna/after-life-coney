@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  font-size: 2rem;
+}
+
+.archiveText {
+  display: none;
+}
+
+.facilitationText {
+  display: none;
+}
+
+footer {
+  padding: 20px;
+  /* position: fixed;
+  bottom: 0; */
+  flex-shrink: 0;
+}
+.page-title {
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-container {
+  margin: auto;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+}
