@@ -1,0 +1,6 @@
+#Contents of .htaccess
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://foo.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.foo.com/.*$ [NC]
+RewriteRule .(mp4|mp3|avi)$ - [F]
