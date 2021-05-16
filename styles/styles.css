@@ -33,9 +33,19 @@ nav {
   width: 100vw;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .nav-item {
   font-size: 2rem;
+  flex-grow: 1;
+  text-align: center;
+  width: 50%;
 }
+
 .nav-item:hover,
 a:hover {
   color: rgb(43, 116, 116);
@@ -59,19 +69,19 @@ footer {
   text-align: center;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .main-container {
   margin: auto;
 }
 
 .partners-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.partner-item {
+  flex-grow: 1;
+  text-align: center;
+  width: 33%;
 }
 
 .title-container {
