@@ -15,6 +15,8 @@ body {
 
 header {
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -62,4 +64,40 @@ footer {
 .partners-container {
   display: flex;
   justify-content: space-around;
+}
+
+.title-container {
+  max-width: fit-content;
+  margin-inline-start: 15px;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.6em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4s steps(25, end) 1s 1 normal both,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
