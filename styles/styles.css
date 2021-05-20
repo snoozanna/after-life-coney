@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
 /* colours */
-/* Accent Colour  rgb 225 199 92 
-Complimentary Colour  rgb 43 116 116 */
+/*  #ebce50
+#357b82*/
 
 html,
 body {
@@ -11,16 +11,10 @@ body {
 
 body {
   font-family: "Space Mono", monospace;
-  padding: 20px;
+  padding: 5px;
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-header {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 main {
@@ -29,26 +23,64 @@ main {
   justify-content: center;
 }
 
-nav {
-  width: 100vw;
-}
-
-.nav-container {
+header {
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 699px) {
+  nav {
+    width: 100vw;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    padding: 40px;
+  }
+
+  main {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    width: 100vw;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: center;
+    width: 50%;
+  }
 }
 
-.nav-item {
-  font-size: 2rem;
-  flex-grow: 1;
-  text-align: center;
-  width: 50%;
+@media screen and (min-width: 1080px) {
+  body {
+    padding: 20px;
+  }
 }
 
 .nav-item:hover,
 a:hover {
-  color: rgb(43, 116, 116);
+  color: #357b82;
 }
 
 .archiveText {
@@ -67,6 +99,7 @@ footer {
 }
 .page-title {
   text-align: center;
+  font-size: 4rem;
 }
 
 .main-container {
@@ -75,13 +108,16 @@ footer {
 
 .partners-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .partner-item {
   flex-grow: 1;
   text-align: center;
-  width: 33%;
+  /* width: 33%; */
+  margin-block-end: 20px;
 }
 
 .title-container {
@@ -89,33 +125,40 @@ footer {
   margin-inline-start: 15px;
 }
 
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.6em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(20, end) 1s 1 normal both,
-    blink-caret 0.75s step-end infinite;
+/*TYPE WRITER*/
+
+@media screen and (min-width: 1080px) {
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
+@media screen and (min-width: 700px) {
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.6em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(20, end) 1s 1 normal both,
+      blink-caret 0.75s step-end infinite;
   }
-  to {
-    width: 100%;
-  }
-}
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
-  50% {
-    border-color: black;
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
   }
 }

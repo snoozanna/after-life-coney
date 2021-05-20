@@ -1,0 +1,13 @@
+.main-container {
+  display: flex;
+}
+.credits-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.credit {
+  margin-block-end: 15px;
+  text-align: center;
+}
