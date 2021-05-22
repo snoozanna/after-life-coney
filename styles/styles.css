@@ -11,7 +11,8 @@ body {
 
 body {
   font-family: "Space Mono", monospace;
-  padding: 5px;
+  font-size: 2rem;
+  padding: 15px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -29,10 +30,15 @@ header {
   justify-content: center;
 }
 @media screen and (max-width: 699px) {
+  body {
+    font-size: 1.6rem;
+  }
   nav {
     width: 100vw;
   }
-
+  .title-container {
+    margin-inline-start: 0;
+  }
   .nav-container {
     flex-direction: column;
     align-items: center;
@@ -46,6 +52,10 @@ header {
 @media screen and (min-width: 700px) {
   body {
     padding: 40px;
+  }
+
+  header {
+    margin-block-end: 15px;
   }
 
   main {
@@ -75,6 +85,7 @@ header {
 @media screen and (min-width: 1080px) {
   body {
     padding: 20px;
+    font-size: 1.7rem;
   }
 }
 
@@ -122,7 +133,6 @@ footer {
 
 .title-container {
   max-width: fit-content;
-  margin-inline-start: 15px;
 }
 
 /*TYPE WRITER*/
@@ -131,6 +141,9 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
+  .title-container {
+    margin-inline-start: 15px;
+  }
   .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.6em solid black; /* The typwriter cursor */

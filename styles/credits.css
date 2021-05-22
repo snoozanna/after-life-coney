@@ -11,3 +11,40 @@
   margin-block-end: 15px;
   text-align: center;
 }
+
+.role {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 699px) {
+  .separator {
+    display: none;
+  }
+
+  .credit {
+    max-width: 80%;
+    margin-block-end: 15px;
+  }
+
+  .credit:first-child {
+    margin-block-end: 30px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .credit > div {
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: space-around; */
+  }
+
+  .credit {
+    max-width: 80%;
+    margin-block-end: 30px;
+  }
+}
+
+/* 
+
+@media screen and (min-width: 1080px)*/
