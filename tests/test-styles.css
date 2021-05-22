@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #357b82;
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 10px;
+}
+
+.nav-item > span {
+  margin-block-end: 15px;
+  text-align: center;
+}
+
+.audio-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.audio-item {
+  margin-block-end: 15px;
+}
+
+/*BUTTONS*/
+
+button:focus {
+  outline: 0;
+}
+
+button {
+  background: #000000;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  font: inherit;
+}
+
+button:hover {
+  background: #357b82;
+  border: 1px solid transparent;
+}
+.audio-button {
+  background: transparent;
+  color: #000;
+}
+
+.audio-button {
+  background: transparent;
+  color: #000;
+  border: none;
+  border-radius: 0;
+  padding: 5px;
+}
+
+.audio-button:hover {
+  text-decoration: underline;
+  background: transparent;
+}
