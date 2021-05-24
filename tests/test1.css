@@ -20,7 +20,6 @@ a:hover {
 
 main {
   flex: 1 0 auto;
-
 }
 
 .nav-container {
@@ -71,3 +70,21 @@ button:hover {
   border: 1px solid transparent;
 }
 
+@media screen and (max-width: 480px) {
+  footer {
+    bottom: inherit;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 10px;
+    align-items: baseline;
+    max-width: 100%;
+    flex-direction: row;
+  }
+}

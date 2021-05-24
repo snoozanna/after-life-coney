@@ -28,17 +28,15 @@
   <footer>
     <nav class="nav-container">
 
-      <div class="nav-item"> <span>We recommend the</span><button>FACILIATION</button></div>
 
-      <div class="nav-item"><span>or go straight to</span>
-        <button>RECORDING</button>
+  <div class="nav-item">
+    <p>The stream of memories plays automatically</p>
+       <p>You can do nothing, let the stream play through</p>
+            <<timed 3s>>Or you can choose to <<timed 4s>><<button SKIP>><<set $skipped to true>><<set $skip +=1>>
+                      <<goto 'listen02'>><< /button>><< /timed>> to the next<< /timed>>
+      <div class="nav-item"><span>or</span> <button>MENU</button>
       </div>
-      <div class="nav-item"><span>or</span> <button>REPLAY</button>
-      </div>
-      <div class="audio-controls">
-        <div class="audio-item"><button class="audio-button">AUDIO ON/OFF</button></div>
-        <div class="audio-item"><button class="audio-button">CAPTIONS ON/OFF</button></div>
-      </div>
+
 
     </nav>
   </footer>
