@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  /* padding: 20px; */
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #357b82;
+}
+
+/*FOOTER */
+footer {
+  font-size: 1.3rem;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container:last-child {
+  text-align: right;
+}
+
+.nav-item.listentext {
+  text-align: right;
+}
+
+.prefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+@media screen and (min-width: 480px) {
+  .audio-controls {
+    position: fixed;
+    top: 0;
+    /* align-items: flex-end; */
+    right: 0;
+    padding: 30px;
+  }
+  .prefooter {
+    width: 50%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .nav-container {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .nav-item {
+    margin-right: 15px;
+  }
+}
+/*BUTTONS*/
+
+button:focus {
+  outline: 0;
+}
+
+button {
+  background: #000000;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  font: inherit;
+}
+
+button:hover {
+  background: #357b82;
+  border: 1px solid transparent;
+}
+.audio-button {
+  background: transparent;
+  color: #000;
+}
+
+.audio-button {
+  background: #8080803d;
+  color: #000;
+  border: none;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.audio-button:hover {
+  text-decoration: underline;
+  background: transparent;
+}

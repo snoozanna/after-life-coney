@@ -131,18 +131,158 @@ footer {
   margin-block-end: 20px;
 }
 
-.title-container {
-  max-width: fit-content;
+
+
+/*TYPE WRITER - UNDER 699PX*/
+
+.title-container{
+  display: none;
 }
 
-/*TYPE WRITER*/
+.css-typing h1 {
+  border-right: 0.6em solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  font-size: 40px;
+}
+.css-typing h1:nth-child(1) {
+  width: 6.4em;
+  -webkit-animation: type 2s steps(20, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type 2s steps(20, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(2) {
+  width: 7em;
+  opacity: 0;
+  -webkit-animation: type 3.5s steps(20, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type2 2s steps(20, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(3) {
+  width: 7.3em;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.6em solid black;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.6em solid black;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.6em solid black;
+  }
+  100% {
+    opacity: 1;
+    /*     border: none; */
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.6em solid black;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/*TYPE WRITER - OVER 400PX*/
 
 @media screen and (min-width: 1080px) {
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
+  .css-typing.mobile {
+    display: none;
+  }
   .title-container {
+    display: inline;
     margin-inline-start: 15px;
+  max-width: fit-content;
+}
   }
   .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
