@@ -133,9 +133,9 @@ footer {
 
 
 
-/*TYPE WRITER - UNDER 699PX*/
+/*TYPE WRITER - UNDER 799PX*/
 
-.title-container{
+.title-container.home{
   display: none;
 }
 
@@ -278,7 +278,7 @@ footer {
   .css-typing.mobile {
     display: none;
   }
-  .title-container {
+  .title-container.home {
     display: inline;
     margin-inline-start: 15px;
   max-width: fit-content;
