@@ -33,11 +33,13 @@ nav button {
   font-size: 1.6rem;
 }
 
-
-
 button:hover {
   background: #357b82;
   border: 1px solid transparent;
+}
+
+button a:hover {
+  color: inherit;
 }
 
 /* HEADER  */
@@ -57,9 +59,7 @@ header {
   font-size: 4rem;
 }
 
-.description {
-  text-align: center;
-}
+/* MAIN  */
 
 main {
   flex: 1 0 auto;
@@ -71,9 +71,30 @@ main {
   margin: auto;
 }
 
+.description {
+  text-align: center;
+}
+
 .nav-item {
   text-align: center;
   padding: 2rem;
+
+  /* text-decoration: underline; */
+}
+
+/* .nav-item h2 {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin: auto;
+} */
+
+.nav-item h2:hover {
+  /* background: #357b82; */
+  background: #000000;
+  border: 1px solid transparent;
+  color: white;
 }
 
 @media screen and (max-width: 699px) {
