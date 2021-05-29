@@ -34,9 +34,6 @@
 @media screen and (min-width: 700px) {
   .credit > div {
     display: inline-block;
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: space-around; */
   }
 
   .credit {
@@ -44,7 +41,3 @@
     margin-block-end: 30px;
   }
 }
-
-/* 
-
-@media screen and (min-width: 1080px)*/

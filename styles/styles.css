@@ -104,8 +104,6 @@ a:hover {
 
 footer {
   padding: 0 20px;
-  /* position: fixed;
-  bottom: 0; */
   flex-shrink: 0;
 }
 .page-title {
@@ -131,11 +129,15 @@ footer {
   margin-block-end: 20px;
 }
 
-
+.privacy-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
 
 /*TYPE WRITER - UNDER 799PX*/
 
-.title-container.home{
+.title-container.home {
   display: none;
 }
 
@@ -281,37 +283,36 @@ footer {
   .title-container.home {
     display: inline;
     margin-inline-start: 15px;
-  max-width: fit-content;
+    max-width: fit-content;
+  }
 }
-  }
-  .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.6em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 3.5s steps(20, end) 1s 1 normal both,
-      blink-caret 0.75s step-end infinite;
-  }
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.6em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(20, end) 1s 1 normal both,
+    blink-caret 0.75s step-end infinite;
+}
 
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
   }
 }
