@@ -113,6 +113,9 @@ main {
     flex-direction: column;
     align-items: center;
   }
+  .nav-title {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 700px) {
   body {
@@ -169,13 +172,11 @@ main {
 /* FOOTER */
 
 footer {
-  padding: 0 20px;
+  padding: 20px;
   flex-shrink: 0;
 }
 
 .footer-item.credits {
-  flex-grow: 1;
-  text-align: center;
   font-size: 1.6rem;
 }
 
@@ -184,10 +185,23 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   font-size: 1rem;
+  /* margin: 0; */
 }
 
 footer > p {
   margin-block-end: 3rem;
+}
+
+.privacy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    padding: 0 20px;
+  }
 }
 
 /*TYPE WRITER - UNDER 799PX*/
