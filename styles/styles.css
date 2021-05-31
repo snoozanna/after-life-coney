@@ -218,7 +218,7 @@ footer > p {
   font-size: 5.5vh;
 }
 .css-typing h1:nth-child(1) {
-  width: 6.4em;
+  width: 7em;
   -webkit-animation: type 2s steps(20, end),
     blink 0.5s step-end infinite alternate;
   animation: type 2s steps(20, end), blink 0.5s step-end infinite alternate;
