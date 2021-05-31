@@ -59,6 +59,12 @@ header {
   font-size: 4rem;
 }
 
+@media screen and (max-width: 699px) {
+  .title-container {
+    margin-block-end: 1rem;
+  }
+}
+
 /* MAIN  */
 
 main {
@@ -117,6 +123,7 @@ main {
     margin-bottom: 0px;
   }
 }
+
 @media screen and (min-width: 700px) {
   body {
     padding: 40px;
@@ -204,154 +211,24 @@ footer > p {
   }
 }
 
-/*TYPE WRITER - UNDER 799PX*/
+/*HOME PAGE TITLE - UNDER 699PX - STATIONARY*/
 
-.page-title.home {
-  display: none;
-}
-
-.css-typing h1 {
-  border-right: 0.6em solid black;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align: left;
-  font-size: 5.5vh;
-}
-.css-typing h1:nth-child(1) {
-  width: 80vw;
-  -webkit-animation: type 2s steps(20, end),
-    blink 0.5s step-end infinite alternate;
-  animation: type 2s steps(20, end), blink 0.5s step-end infinite alternate;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.css-typing h1:nth-child(2) {
-  width: 7em;
-  opacity: 0;
-  -webkit-animation: type 3.5s steps(20, end),
-    blink 0.5s step-end infinite alternate;
-  animation: type2 2s steps(20, end), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.css-typing h1:nth-child(3) {
-  width: 7.3em;
-  opacity: 0;
-  -webkit-animation: type3 5s steps(20, end),
-    blink 0.5s step-end infinite alternate;
-  animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: 0.6em solid black;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@-webkit-keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: 0.6em solid black;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: 0.6em solid black;
-  }
-  100% {
-    opacity: 1;
-    /*     border: none; */
-  }
-}
-
-@-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: 0.6em solid black;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-/*TYPE WRITER - OVER 400PX*/
-
-@media screen and (min-width: 800px) {
-  .css-typing.mobile {
+@media screen and (max-width: 699px) {
+  .typewriter {
     display: none;
   }
-  .page-title.home {
-    display: inline;
-    margin-inline-start: 15px;
-    max-width: fit-content;
+  .page-title.mobile {
+    font-size: 2rem;
   }
 }
+
+/*HOME PAGE TITLE - OVER 700PX - TYPEWRITER*/
+@media screen and (min-width: 700px) {
+  .page-title.mobile {
+    display: none;
+  }
+}
+
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.6em solid black; /* The typwriter cursor */
