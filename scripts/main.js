@@ -1,11 +1,3 @@
-// Disables right click to prevent from downloading
-
-// const noContext = document.getElementById("player");
-
-// noContext.addEventListener("contextmenu", (e) => {
-//   e.preventDefault();
-// });
-
 const archiveLink = document.getElementById("archiveLink");
 const archiveText = document.getElementById("archiveText");
 archiveLink.addEventListener("click", (e) => {

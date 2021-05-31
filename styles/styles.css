@@ -28,7 +28,6 @@ nav button {
   border-radius: 13px;
   color: #ffffff;
   padding: 5px 10px 5px 10px;
-  /* text-decoration: none; */
   font-family: "Space Mono", monospace;
   font-size: 1.6rem;
   font-weight: 600;
@@ -85,20 +84,9 @@ main {
 .nav-item {
   text-align: center;
   padding: 2rem;
-
-  /* text-decoration: underline; */
 }
 
-/* .nav-item h2 {
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: fit-content;
-  margin: auto;
-} */
-
 .nav-item h2:hover {
-  /* background: #357b82; */
   background: #000000;
   border: 1px solid transparent;
   color: white;
