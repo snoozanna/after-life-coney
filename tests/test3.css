@@ -100,7 +100,7 @@ button:hover {
 }
 
 .audio-button {
-  background: #8080803d;
+  background: hsla(0, 0%, 50%, 0.239);
   color: #000;
   border: none;
   padding: 5px;
