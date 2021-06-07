@@ -40,4 +40,8 @@
     max-width: 80%;
     margin-block-end: 30px;
   }
+
+  .title-container {
+    min-height: fit-content;
+  }
 }
